@@ -1,0 +1,7 @@
+#!/bin/sh
+
+scalac -classpath /usr/share/java/scala-library.jar:jaudiotagger.jar Main.scala
+
+
+
+scala -classpath jaudiotagger.jar:./ organizer.Main 

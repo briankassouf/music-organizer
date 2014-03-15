@@ -1,0 +1,11 @@
+#!/bin/sh
+
+scalac Tracks.scala
+scalac -classpath /usr/share/java/scala-library.jar:jaudiotagger.jar Tags.scala
+scalac MusicBrainz.scala
+scalac -classpath /usr/share/java/scala-library.jar:jaudiotagger.jar Main.scala
+scalac FileManipulation.scala
+
+
+scala -classpath jaudiotagger.jar:./ organizer.Main 
+

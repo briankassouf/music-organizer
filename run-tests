@@ -1,0 +1,10 @@
+#!/bin/sh
+
+#scalac -classpath /usr/share/java/scala-library.jar:/home/brian/Desktop/jaudiotaggerv1.0.8/dist/jaudiotagger.jar findrelease.scala
+
+scalac -classpath /usr/share/java/scala-library.jar:jaudiotagger.jar findrelease.scala
+scalac tests.scala
+
+scala -classpath ./ Tests.Test
+
+#scala -classpath /home/brian/code/scalapractice/organizer/findrelease/GetAlbum:./ Tests.Test

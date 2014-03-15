@@ -1,0 +1,6 @@
+#!/bin/sh
+
+
+
+scala -classpath jaudiotagger.jar:./ organizer.Main 
+
